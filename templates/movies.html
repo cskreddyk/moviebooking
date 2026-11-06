@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Movies - MovieBook</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        🎬 MovieBook
+    </div>
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="/movies">
+            Movies
+        </a>
+
+        <a href="/booking">
+            Book Tickets
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="movies-section">
+
+    <h1>Now Showing</h1>
+
+    <div class="movie-container">
+
+
+        <div class="movie-card">
+
+            <div class="movie-image">
+                🎬
+            </div>
+
+            <h2>Avengers</h2>
+
+            <p>
+                English | 2h 30m
+            </p>
+
+            <p>
+                ⭐ 8.5/10
+            </p>
+
+            <p class="price">
+                ₹250
+            </p>
+
+            <a href="/booking"
+               class="btn">
+                Book Now
+            </a>
+
+        </div>
+
+
+        <div class="movie-card">
+
+            <div class="movie-image">
+                🎥
+            </div>
+
+            <h2>Pushpa</h2>
+
+            <p>
+                Telugu | 2h 45m
+            </p>
+
+            <p>
+                ⭐ 8.2/10
+            </p>
+
+            <p class="price">
+                ₹200
+            </p>
+
+            <a href="/booking"
+               class="btn">
+                Book Now
+            </a>
+
+        </div>
+
+
+        <div class="movie-card">
+
+            <div class="movie-image">
+                🍿
+            </div>
+
+            <h2>Salaar</h2>
+
+            <p>
+                Telugu | 2h 55m
+            </p>
+
+            <p>
+                ⭐ 8.4/10
+            </p>
+
+            <p class="price">
+                ₹300
+            </p>
+
+            <a href="/booking"
+               class="btn">
+                Book Now
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 MovieBook. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>

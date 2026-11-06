@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Book Ticket - MovieBook</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        🎬 MovieBook
+    </div>
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="/movies">
+            Movies
+        </a>
+
+        <a href="/booking">
+            Book Tickets
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="booking-section">
+
+    <h1>Book Your Ticket</h1>
+
+
+    <form action="/confirmation"
+          method="GET">
+
+
+        <label>
+            Select Movie
+        </label>
+
+        <select name="movie">
+
+            <option>
+                Avengers
+            </option>
+
+            <option>
+                Pushpa
+            </option>
+
+            <option>
+                Salaar
+            </option>
+
+        </select>
+
+
+        <label>
+            Select Theatre
+        </label>
+
+        <select name="theatre">
+
+            <option>
+                PVR Cinemas
+            </option>
+
+            <option>
+                INOX
+            </option>
+
+            <option>
+                Cinepolis
+            </option>
+
+        </select>
+
+
+        <label>
+            Select Date
+        </label>
+
+        <input
+            type="date"
+            name="date"
+            required
+        >
+
+
+        <label>
+            Select Show
+        </label>
+
+        <select name="show">
+
+            <option>
+                10:00 AM
+            </option>
+
+            <option>
+                2:00 PM
+            </option>
+
+            <option>
+                6:00 PM
+            </option>
+
+            <option>
+                10:00 PM
+            </option>
+
+        </select>
+
+
+        <label>
+            Select Seat
+        </label>
+
+        <select name="seat">
+
+            <option>
+                A1
+            </option>
+
+            <option>
+                A2
+            </option>
+
+            <option>
+                A3
+            </option>
+
+            <option>
+                B1
+            </option>
+
+            <option>
+                B2
+            </option>
+
+            <option>
+                B3
+            </option>
+
+        </select>
+
+
+        <label>
+            Your Name
+        </label>
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+
+
+        <label>
+            Email
+        </label>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+
+        <button
+            type="submit"
+            class="btn">
+            Confirm Booking
+        </button>
+
+
+    </form>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 MovieBook. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>

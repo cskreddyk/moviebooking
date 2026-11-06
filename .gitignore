@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.env
+global-bundle.pem
+.Xauthority
+.cache/
+.bash_history
+.bash_logout
+.bashrc
+.mysql_history
+.profile
+.ssh/
+.viminfo
